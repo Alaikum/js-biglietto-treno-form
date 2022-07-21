@@ -43,16 +43,17 @@ buttonElement.addEventListener('click', function () {
             prezzoFinale = prezzoScontato.toFixed(2);
 
         } else {
-            prezzoFinale = prezzoIntero;
+            prezzoFinale = prezzoIntero.toFixed(2);
         }
 
-        const persona = document.getElementById('persona');
-        const tratta = document.getElementById('tratta');
-        persona.innerHTML = nomeInput.value ;
-        tratta.innerHTML = km ;
+        
+       
+        
+        
 
-        const prezzo = document.getElementById('prezzo');
-        prezzo.innerHTML = prezzoFinale ;
+        
+        const infoBiglietto= document.getElementById('info__biglietto');
+        infoBiglietto.innerHTML= "Salve "+ nomeInput.value+",lei percorrà "+km+"km, il costo del biglietto è di "+prezzoFinale+ " Euro.";
     }
 
 

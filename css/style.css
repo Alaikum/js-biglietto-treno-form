@@ -51,4 +51,7 @@ body{
     background-color: darkmagenta;
     color: white;
 }
-
+ #info__biglietto{
+    text-align: center;
+    color: darkred;
+ }
