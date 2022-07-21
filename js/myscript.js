@@ -17,6 +17,8 @@ const buttonElement = document.querySelector('.calcola');
 buttonElement.addEventListener('click', function () {
     // alert("non toccare")
     const distanzaInput = document.querySelector(".distanza");
+    const nomeInput = document.querySelector(".nome");
+    console.dir(nomeInput)
     const etaInput = document.querySelector('.eta');
     const eta = etaInput.value;
     const km = parseFloat(distanzaInput.value);
@@ -24,7 +26,11 @@ buttonElement.addEventListener('click', function () {
     var prezzoScontato
     var prezzoFinale
 
-    if (km <= 0 || isNaN(km)) {
+    if (nomeInput.value == 0) {
+        alert("inserisci le tue generalità")
+
+    } else if
+        (km <= 0 || isNaN(km)) {
         alert("inserisci una distanza valida")
     }
     else {
@@ -40,14 +46,12 @@ buttonElement.addEventListener('click', function () {
             prezzoFinale = prezzoIntero;
         }
 
+
+
+        const text = document.getElementById('we');
+        text.innerHTML = prezzoFinale + 'Euro'
     }
 
-
-
-
-
-    const text = document.getElementById('we');
-    text.innerHTML = prezzoFinale + 'Euro'
 
 
 })

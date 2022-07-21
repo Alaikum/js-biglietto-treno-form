@@ -5,30 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Acquista qui il tuo biglietto</title>
 </head>
 
 <body>
 
-    <input type="text" class="distanza" value="" placeholder="Distanza da percorrere">
-    <select class="eta">
-        <option value="50">
-            18-64
-        </option>
 
-        <option value="15">
-            0-17
-        </option>
+    <div class="container">
+        <div class="dati">
+            <div class="font__size">
 
-        <option value="70">
-            over 65
-        </option>
-    </select> Fascia di età
+                <h2>Nome e Cognome</h2>
+                <input type="text" class="nome font__size" value="" placeholder="Nome e Cognome">
+            </div>
+            <div class="font__size">
+
+                <h2>Distanza da percorre in Km</h2>
+                <input type="text" class="distanza font__size" value="" placeholder="Distanza da percorrere">
+            </div>
 
 
-    <button class="calcola">Calcola</button>
 
-    <h1 id="we"></h1>
+            <div class="font__size">
+
+                <h2>Fascia d'età</h2>
+                <select class="eta font__size">
+                    <option value="50">
+                        18-64
+                    </option>
+
+                    <option value="15">
+                        0-17
+                    </option>
+
+                    <option value="70">
+                        over 65
+                    </option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="button">
+
+            <button class="calcola">Calcola</button>
+        </div>
+
+        <h1 id="we"></h1>
+    </div>
 
     <script src="./js/myscript.js"></script>
 </body>

@@ -1,0 +1,45 @@
+* {
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    width: 1200px;
+    background-color: beige;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dati{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.font__size{
+    font-size: 1.5rem;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.calcola{
+    font-size: 2rem;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: darkmagenta;
+    color: white;
+}
+
