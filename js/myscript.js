@@ -51,7 +51,6 @@ buttonElement.addEventListener('click', function () {
 
 
 
-
         const infoBiglietto = document.getElementById('info__biglietto');
         infoBiglietto.innerHTML = "Salve " + nomeInput.value + ",lei percorrà " + km + "km, il costo del biglietto è di " + prezzoFinale + " Euro.";
     }
