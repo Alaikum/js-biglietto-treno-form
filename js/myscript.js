@@ -18,7 +18,7 @@ buttonElement.addEventListener('click', function () {
     // alert("non toccare")
     const distanzaInput = document.querySelector(".distanza");
     const nomeInput = document.querySelector(".nome");
-    console.dir(nomeInput)
+    // console.dir(nomeInput)
     const etaInput = document.querySelector('.eta');
     const eta = etaInput.value;
     const km = parseFloat(distanzaInput.value);
@@ -46,10 +46,13 @@ buttonElement.addEventListener('click', function () {
             prezzoFinale = prezzoIntero;
         }
 
+        const persona = document.getElementById('persona');
+        const tratta = document.getElementById('tratta');
+        persona.innerHTML = nomeInput.value ;
+        tratta.innerHTML = km ;
 
-
-        const text = document.getElementById('we');
-        text.innerHTML = prezzoFinale + 'Euro'
+        const prezzo = document.getElementById('prezzo');
+        prezzo.innerHTML = prezzoFinale ;
     }
 
 

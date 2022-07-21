@@ -16,6 +16,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 15px;
 }
 .dati{
     padding: 2rem;
@@ -23,6 +24,14 @@ body{
     justify-content: space-between;
     text-align: center;
 }
+
+.dati>div {
+   background-color: cornflowerblue;
+   padding: 1rem;
+   border-radius: 5px;
+  box-shadow: 5px 10px;
+}
+
 
 .font__size{
     font-size: 1.5rem;
