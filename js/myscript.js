@@ -10,26 +10,44 @@
 // va applicato uno sconto del 20% per i minorenni
 // va applicato uno sconto del 40% per gli over 65.
 
-const prezzoAlKm = 0.21
 
-
-
+const prezzoAlKm = 0.21;
 const buttonElement = document.querySelector('.calcola');
 
 buttonElement.addEventListener('click', function () {
     // alert("non toccare")
-    const distanzaInput = document.querySelector(".distanza")
+    const distanzaInput = document.querySelector(".distanza");
     const etaInput = document.querySelector('.eta');
-    const eta= etaInput.value
-    
+    const eta = etaInput.value;
+    const km = parseFloat(distanzaInput.value);
+    const prezzoIntero = km * prezzoAlKm
+    var prezzoScontato
+    var prezzoFinale
+
+    if (km <= 0 || isNaN(km)) {
+        alert("inserisci una distanza valida")
+    }
+    else {
+        if (eta < 18) {
+            prezzoScontato = prezzoIntero * (1 - 0.2)
+            prezzoFinale = prezzoScontato.toFixed(2);
+
+        } else if (eta >= 65) {
+            prezzoScontato = prezzoIntero * (1 - 0.4)
+            prezzoFinale = prezzoScontato.toFixed(2);
+
+        } else {
+            prezzoFinale = prezzoIntero;
+        }
+
+    }
 
 
 
 
 
-    const prezzo = distanzaInput.value * prezzoAlKm
     const text = document.getElementById('we');
-    text.innerHTML = prezzo + 'Euro'
+    text.innerHTML = prezzoFinale + 'Euro'
 
 
 })
