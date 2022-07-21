@@ -41,15 +41,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
+    
    
 }
 
-.calcola{
+.calcola,.cancel{
     font-size: 2rem;
     border-radius: 15px;
     overflow: hidden;
     background-color: darkmagenta;
     color: white;
+    padding: 5px;
 }
  #info__biglietto{
     text-align: center;
